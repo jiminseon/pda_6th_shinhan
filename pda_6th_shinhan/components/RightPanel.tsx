@@ -10,12 +10,6 @@ export default function RightPanel() {
         </div>
         <div className="text-xs opacity-80">신한 SOL증권 소개 | 신한 SOL(HTS) 소개</div>
       </div>
-      <div className="bg-white bg-opacity-90 rounded-xl shadow p-6">
-        <div className="font-bold mb-2">라이브 자산관리</div>
-        <div className="font-bold mb-4">플랫폼 신한 SOL증권</div>
-        <div className="text-xs mb-4">누구나 쉽게 자산관리<br/>제대로 투자하는 신한 SOL증권</div>
-        <button className="bg-[#0050a0] text-white rounded px-3 py-1 text-xs font-semibold">자세히보기</button>
-      </div>
     </div>
   )
 } 
