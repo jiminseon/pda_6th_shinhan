@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Header() {
   return (
-    <div className="w-full bg-opacity-90 border-b border-gray-200">
+    <div className="w-full bg-opacity-90">
       <div className="max-w-[1200px] mx-auto flex flex-row items-center justify-between h-16 px-6">
         <div className="flex items-center space-x-3 ml-5">
           <Image src="/sinhan_logo.png" alt="" width={180} height={56} className="ml-10" priority />
