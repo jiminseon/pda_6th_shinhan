@@ -13,18 +13,19 @@ export default function Home() {
         className="w-full flex flex-col items-center"
         style={{
           backgroundImage: 'url(https://www.shinhansec.com/siw/common/images/trading/bg_main_visual.jpg)',
-          backgroundSize: 'cover',
+          // backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
+          height: '764px',
         }}
       >
         <Header />
         <Nav />
-        <div className="flex flex-col md:flex-row w-full max-w-[1200px] mt-8 px-2 md:px-6 gap-8">
+        <div className="flex flex-col md:flex-row w-full max-w-[980px] mt-8 gap-8">
           <div className="flex-1 min-w-0">
             <MainIndices />
           </div>
-          <div className="w-full md:w-[340px] flex-shrink-0">
+          <div className="w-full md:w-[340px] pl-8 flex-shrink-0">
             <RightPanel />
           </div>
         </div>
