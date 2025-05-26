@@ -1,6 +1,6 @@
 export default function MainIndices() {
   return (
-    <div className="bg-opacity-90 rounded-xl shadow p-8 mb-8">
+    <div className="bg-opacity-90 rounded-xl p-8 mb-8">
       <div className="flex flex-row items-end justify-between mb-4">
         <div className="flex flex-row gap-8">
           <div>
