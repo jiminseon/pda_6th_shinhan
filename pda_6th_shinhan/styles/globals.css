@@ -92,3 +92,49 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.strategy-title {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.strategy-title::before,
+.strategy-title::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #0050a0;
+  transition: width 0.3s ease;
+  top: 50%;
+}
+
+.strategy-title::before {
+  right: 100%;
+  margin-right: 10px;
+}
+
+.strategy-title::after {
+  left: 100%;
+  margin-left: 10px;
+}
+
+.strategy-title:hover::before,
+.strategy-title:hover::after {
+  width: 20px;
+}
+
+.strategy-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.strategy-item:hover .strategy-content {
+  max-height: 500px;
+  padding: 12px;
+}
