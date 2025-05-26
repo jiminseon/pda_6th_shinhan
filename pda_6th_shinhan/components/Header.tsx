@@ -18,8 +18,8 @@ export default function Header() {
           <span>신한금융그룹</span>
         </div>
         <div className="flex items-center space-x-2">
-          <button className="p-2"><svg width="20" height="20" fill="none"><circle cx="10" cy="10" r="9" stroke="#0050a0" strokeWidth="2"/></svg></button>
-          <button className="p-2"><svg width="20" height="20" fill="none"><rect x="4" y="9" width="12" height="2" rx="1" fill="#0050a0"/></svg></button>
+          <strong className="text-[13px]">소비자 포털</strong>
+          <strong className="text-[13px]">상품 공시실</strong>
         </div>
       </div>
     </div>
