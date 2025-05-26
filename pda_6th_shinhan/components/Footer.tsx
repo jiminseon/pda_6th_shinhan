@@ -7,24 +7,24 @@ export default function Footer() {
         {/* Left Section - Customer Service */}
         <div className="flex flex-col lg:flex-row gap-8 flex-1">
           <div className="space-y-2 min-w-[200px]">
-            <p className="text-sm text-gray-600">고객지원센터</p>
-            <p className="text-3xl font-bold text-blue-600">1588-0365</p>
+            <p className="text-sm font-semibold">고객지원센터</p>
+            <p className="text-3xl text-blue-600" style={{color : "#1598dc"}}>1588-0365</p>
             <p className="text-sm text-gray-600">말로하는 AI 상담서비스</p>
             <p className="text-sm text-gray-600">24시간 챗봇 상담(신한 SOL증권)</p>
           </div>
           <div className="space-y-1 min-w-[180px]">
-            <p className="whitespace-nowrap">• 해외주식상담센터 02-3772-2525</p>
-            <p className="whitespace-nowrap">• 해외파생팀 02-3772-4365</p>
-            <p className="whitespace-nowrap">• 해외사용자 ARS</p>
-            <p className="ml-4 whitespace-nowrap">82-2-6255-4510 (유료)</p>
+            <p className="whitespace-nowrap text-darkgray">• 해외주식상담센터 02-3772-2525</p>
+            <p className="whitespace-nowrap text-darkgray">• 해외파생팀 02-3772-4365</p>
+            <p className="whitespace-nowrap text-darkgray">• 해외사용자 ARS</p>
+            <p className="ml-4 whitespace-nowrap text-darkgray">82-2-6255-4510 (유료)</p>
           </div>
 
           <div className="space-y-1 min-w-[180px]">
-            <p className="whitespace-nowrap">• 연금자산관리센터 1588-1122</p>
-            <p className="whitespace-nowrap">• 디지털PB센터 02-3772-1010</p>
-            <p className="whitespace-nowrap">• 이벤트 전용센터 02-3772-2220</p>
-            <p className="whitespace-nowrap">• 시니어전용 상담센터</p>
-            <p className="ml-4">02-3772-1001</p>
+            <p className="whitespace-nowrap text-darkgray">• 연금자산관리센터 1588-1122</p>
+            <p className="whitespace-nowrap text-darkgray">• 디지털PB센터 02-3772-1010</p>
+            <p className="whitespace-nowrap text-darkgray">• 이벤트 전용센터 02-3772-2220</p>
+            <p className="whitespace-nowrap text-darkgray">• 시니어전용 상담센터</p>
+            <p className="ml-4 text-darkgray">02-3772-1001</p>
           </div>
         </div>
 
