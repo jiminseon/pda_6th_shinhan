@@ -2,12 +2,12 @@ import Image from "next/image"
 
 export default function Header() {
   return (
-    <div className="w-full bg-opacity-90">
-      <div className="max-w-[1200px] mx-auto flex flex-row items-center justify-between h-16 px-6">
-        <div className="flex items-center space-x-3 ml-5">
-          <Image src="/sinhan_logo.png" alt="" width={180} height={56} className="ml-10" priority />
+    <div className="w-full bg-opacity-90 pb-2">
+      <div className="max-w-[980px] mx-auto flex flex-row items-center justify-between h-16 pt-4">
+        <div className="flex items-center space-x-3">
+          <Image src="/sinhan_logo.png" alt="" width={180} height={56} className="" priority />
         </div>
-        <div className="flex items-center space-x-6 text-gray-700 text-sm">
+        <div className="flex items-center space-x-6 text-gray-700 text-[11px]">
           <span>로그인</span>
           <span>계좌개설</span>
           <span>고객센터</span>
