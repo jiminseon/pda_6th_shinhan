@@ -5,7 +5,7 @@ export default function Header() {
     <div className="w-full bg-white bg-opacity-90 border-b border-gray-200">
       <div className="max-w-[1200px] mx-auto flex flex-row items-center justify-between h-16 px-6">
         <div className="flex items-center space-x-3">
-          <Image src="/logo_shinhan.png" alt="신한투자증권" width={36} height={36} className="h-9 w-9" />
+          <Image src="/logo_shinhan.png" alt="신한투자증권 로고" width={36} height={36} className="h-9 w-9" priority />
           <span className="text-2xl font-bold text-[#0050a0]">신한투자증권</span>
         </div>
         <div className="flex items-center space-x-6 text-gray-700 text-sm">
