@@ -16,33 +16,33 @@ export default function BottomSection() {
           <tbody>
             <tr className="border-b">
               <td className="pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">KODEX 200선물인버스2</a></td>
-              <td className="text-right pt-3.5 pb-2.5 px-7">2,030</td>
-              <td className="text-right text-blue-600 pt-3.5 pb-2.5 px-7">- 50</td>
-              <td className="text-right text-blue-600 pt-3.5 pb-2.5 px-7">-2.40 %</td>
+              <td className="text-right pt-3.5 pb-2.5 px-7">2,020</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 5</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">0.25 %</td>
             </tr>
             <tr className="border-b">
               <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">메디톡스</a></td>
-              <td className="text-right pt-3.5 pb-2.5 px-7">262</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 46</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">21.30 %</td>
+              <td className="text-right pt-3.5 pb-2.5 px-7">269</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 21</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">8.47 %</td>
             </tr>
             <tr className="border-b">
-              <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">동양철관</a></td>
-              <td className="text-right pt-3.5 pb-2.5 px-7">1,430</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 84</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">6.24 %</td>
+              <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">메이슨캐피탈</a></td>
+              <td className="text-right pt-3.5 pb-2.5 px-7">518</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 25</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">5.07 %</td>
             </tr>
             <tr className="border-b">
-              <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">우리기술</a></td>
-              <td className="text-right pt-3.5 pb-2.5 px-7">2,400</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 40</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">1.69 %</td>
+              <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">삼성중공업</a></td>
+              <td className="text-right pt-3.5 pb-2.5 px-7">16,260</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 1,160</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">7.68 %</td>
             </tr>
             <tr className="border-b">
               <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">케이씨티</a></td>
               <td className="text-right pt-3.5 pb-2.5 px-7">3,650</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 235</td>
-              <td className="text-right text-red-600  pt-3.5 pb-2.5 px-7">6.88 %</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 130</td>
+              <td className="text-right text-red-600  pt-3.5 pb-2.5 px-7">3.69 %</td>
             </tr>
           </tbody>
         </table>
@@ -61,34 +61,34 @@ export default function BottomSection() {
           </thead>
           <tbody>
             <tr className="border-b">
-              <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">브이원텍</a></td>
-              <td className="text-right pt-3.5 pb-2.5 px-7">5,130</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 1,180</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">29.87 %</td>
-            </tr>
-            <tr className="border-b">
-              <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">그린플러스</a></td>
-              <td className="text-right pt-3.5 pb-2.5 px-7">3,720</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 855</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">29.84 %</td>
+              <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">세종텔레콤</a></td>
+              <td className="text-right pt-3.5 pb-2.5 px-7">5,840</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">⬆ 1,345</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">29.92 %</td>
             </tr>
             <tr className="border-b">
               <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">라닉스</a></td>
-              <td className="text-right pt-3.5 pb-2.5 px-7">21,150</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 4,850</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">29.75 %</td>
+              <td className="text-right pt-3.5 pb-2.5 px-7">3,040</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">⬆ 700</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">29.91 %</td>
             </tr>
             <tr className="border-b">
-              <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">신성약품</a></td>
-              <td className="text-right pt-3.5 pb-2.5 px-7">19,980</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 4,480</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">28.90 %</td>
+              <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">제이에스코퍼레이션</a></td>
+              <td className="text-right pt-3.5 pb-2.5 px-7">11,760</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 2,700</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">29.80 %</td>
             </tr>
             <tr className="border-b">
-              <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">파이아이</a></td>
-              <td className="text-right pt-3.5 pb-2.5 px-7">8,570</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 1,860</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">27.72 %</td>
+              <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">플루토스</a></td>
+              <td className="text-right pt-3.5 pb-2.5 px-7">353</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">⬆ 81</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">29.78 %</td>
+            </tr>
+            <tr className="border-b">
+              <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">화인베스틸</a></td>
+              <td className="text-right pt-3.5 pb-2.5 px-7">1,015</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 223</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">28.16 %</td>
             </tr>
           </tbody>
         </table>
@@ -108,32 +108,32 @@ export default function BottomSection() {
           <tbody>
             <tr className="border-b">
               <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">한국전력</a></td>
-              <td className="text-right pt-3.5 pb-2.5 px-7">31,450</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 750</td>
-              <td className="text-center pt-3.5 pb-2.5 px-7">29</td>
+              <td className="text-right pt-3.5 pb-2.5 px-7">30,450</td>
+              <td className="text-right text-blue-600 pt-3.5 pb-2.5 px-7">▼ 1,250</td>
+              <td className="text-center pt-3.5 pb-2.5 px-7">30</td>
             </tr>
             <tr className="border-b">
               <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">LG유플러스</a></td>
               <td className="text-right pt-3.5 pb-2.5 px-7">12,740</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 100</td>
+              <td className="text-right text-blue-600 pt-3.5 pb-2.5 px-7">▼ 100</td>
               <td className="text-center pt-3.5 pb-2.5 px-7">15</td>
             </tr>
             <tr className="border-b">
-              <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">현대위아</a></td>
+              <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">헥토이노베이션</a></td>
               <td className="text-right pt-3.5 pb-2.5 px-7">40,500</td>
-              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 250</td>
+              <td className="text-right text-blue-600 pt-3.5 pb-2.5 px-7">▼ 250</td>
               <td className="text-center pt-3.5 pb-2.5 px-7">14</td>
             </tr>
             <tr className="border-b">
-              <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">핸드소니션</a></td>
+              <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">현도위아</a></td>
               <td className="text-right pt-3.5 pb-2.5 px-7">12,890</td>
-              <td className="text-right text-blue-600 pt-3.5 pb-2.5 px-7">- 80</td>
+              <td className="text-right text-blue-600 pt-3.5 pb-2.5 px-7">▼ 80</td>
               <td className="text-center pt-3.5 pb-2.5 px-7">14</td>
             </tr>
             <tr className="border-b">
               <td className=" pt-3.5 pb-2.5 px-7"><a href="https://www.shinhansec.com/WEB-APP/wts/main/index.cmd?screen=1110&code=252670" target="_blank" className="cursor-pointer hover:underline">세아특수강</a></td>
               <td className="text-right pt-3.5 pb-2.5 px-7">13,510</td>
-              <td className="text-right text-blue-600 pt-3.5 pb-2.5 px-7">- 10</td>
+              <td className="text-right text-red-600 pt-3.5 pb-2.5 px-7">▲ 10</td>
               <td className="text-center pt-3.5 pb-2.5 px-7">14</td>
             </tr>
           </tbody>
