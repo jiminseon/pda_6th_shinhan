@@ -83,7 +83,7 @@ const subMenuData: Record<string, Array<{ title: string; items: string[] }>> = {
   ],
   "연금자산": [
     {
-      title: "연금자산한눈에 보기",
+      title: "연금자산",
       items: ["NEW 퇴직연금 바로가기!"],
     },
     {
@@ -112,8 +112,7 @@ const subMenuData: Record<string, Array<{ title: string; items: string[] }>> = {
     {
       title: "트레이딩",
       items: [
-        "트레이딩한눈에 보기",
-        "보다 편리해진 웹트레이딩(WTS)",
+        "웹트레이딩(WTS)",
         "글로벌 투자상품",
         "다양한 투자정보 바로가기",
         "트레이딩 채널 다운로드"
@@ -182,8 +181,8 @@ const subMenuData: Record<string, Array<{ title: string; items: string[] }>> = {
     {
       title: "투자정보",
       items: [
-        "투자정보한눈에 보기",
-        "최근 투자트렌드, 이달의 자산배분 전략은?",
+        "최근 투자트렌드",
+        "이달의 자산배분 전략은?",
         "해외시장 투자전략은?",
         "종목발굴을 위한 알찬 투자정보!",
         "애널리스트 소개"
@@ -496,7 +495,7 @@ export default function Nav() {
                 </a>
               </div>
             </div>
-            
+
 
               {/* 하단: 이미지 + 메뉴 */}
               <div className="flex">
