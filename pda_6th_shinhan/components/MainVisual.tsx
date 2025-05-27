@@ -10,7 +10,7 @@ export default function MainVisual() {
     <div
       style={{
         backgroundImage: 'url("https://www.shinhansec.com/siw/common/images/trading/bg_main_visual.jpg")',
-        // backgroundSize: "cover",
+        backgroundSize: "cover",
         backgroundPosition: "center",
         minHeight: "600px",
         position: "relative",
