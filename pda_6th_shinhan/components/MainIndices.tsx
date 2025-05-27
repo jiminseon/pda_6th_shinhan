@@ -173,7 +173,7 @@ function ChartWithDynamicData() {
           xAxis: {
             type: 'category',
             data: xData,
-            axisLabel: { show: true, fontSize: 14, fontWeight: 500, color: '#222', margin: 8, align: 'center' },
+            axisLabel: { show: true, fontSize: 12, fontWeight: 500, color: '#222', margin: 16, align: 'center' },
             axisLine: { show: true, lineStyle: { color: '#3b82f6', width: 2 } },
             axisTick: { show: true, length: 6, lineStyle: { color: '#3b82f6', width: 2 } },
             splitLine: { show: true, lineStyle: { color: '#d1d5db', width: 1, type: 'solid' } }
@@ -187,7 +187,7 @@ function ChartWithDynamicData() {
             // min: Math.floor(Math.min(...yData) / 100) * 100,
             max: 2700,
             splitNumber: 5,
-            axisLabel: { show: true, fontSize: 14, fontWeight: 500, color: '#222', margin: 8, align: 'right' },
+            axisLabel: { show: true, fontSize: 12, fontWeight: 500, color: '#222', margin: 16, align: 'right' },
             axisLine: { show: true, lineStyle: { color: '#3b82f6', width: 2 } },
             axisTick: { show: true, length: 6, lineStyle: { color: '#3b82f6', width: 2 } },
             splitLine: { show: true, lineStyle: { color: '#d1d5db', width: 1, type: 'solid' } }
@@ -253,7 +253,8 @@ function ChartWithDynamicData() {
           // canvas DOM을 직접 찾는다
           const canvas = chart.getZr().dom.querySelector('canvas[data-zr-dom-id]');
           if (canvas) {
-            canvas.style.left = '-40px'; // ✅ 직접 수정!
+            canvas.style.left = '-40px';
+            canvas.style.top = '10px'; // ✅ 직접 수정!
           }
         }}
         style={{ width: '100%', height: '100%' }}
