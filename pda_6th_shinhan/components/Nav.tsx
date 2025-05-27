@@ -477,38 +477,68 @@ export default function Nav() {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.25 }}
           >
-            <div className="w-[980px] mx-auto flex py-6 px-4 text-sm">
-              {/* 좌측 이미지 */}
-              <div className="w-[200px] mr-8 shrink-0">
-                <Image
-                  src="/popupPage.jpg"
-                  alt="Popup Image"
-                  width={200}
-                  height={440}
-                  className="rounded-md object-cover h-[440px]"
-                  style={{ height: "440px !important" }}
-                />
-              </div>
+            <div className="w-[980px] mx-auto py-6 px-4 text-sm w-full items-center">
+              {/* 상단 제목 */}
+              <div className="w-[980px] mx-auto py-6 px-4 text-sm w-full items-center">
+              {/* 상단 제목 */}
+              <div className="flex items-center justify-center mb-6 space-x-3">
+                {/* 제목 */}
+                <h2 className="text-3xl font-extrabold text-[#002f87] leading-snug">
+                  자산관리몰
+                </h2>
 
-              {/* 메뉴 리스트 */}
-              <div className="flex flex-wrap gap-8">
-                {subMenuData[activeMenu].map((col, i) => (
-                  <div key={i} className="min-w-[160px]">
-                    <div className="font-bold mb-2 text-gray-800">{col.title}</div>
-                    <ul className="space-y-1 text-gray-600">
-                      {col.items.map((text, j) => (
-                        <li key={j} className="cursor-pointer hover:text-[#0070c0]">
-                          {text}
-                        </li>
-                      ))}
-                    </ul>
+                {/* 버튼 */}
+                <a
+                  href="#"
+                  className="inline-flex items-center justify-between border border-gray-400 text-sm px-3 py-1 rounded-sm hover:bg-gray-100"
+                >
+                  한눈에 보기 <span className="ml-1">{'>'}</span>
+                </a>
+              </div>
+            </div>
+            
+
+              {/* 하단: 이미지 + 메뉴 */}
+              <div className="flex">
+                {/* 왼쪽 이미지 */}
+                <div className="w-[200px] shrink-0 mr-8">
+                  <Image
+                    src="/popupPage.jpg"
+                    alt="Popup Image"
+                    width={200}
+                    height={440}
+                    className="rounded-md object-cover h-[440px]"
+                    priority
+                  />
+                </div>
+
+                {/* 오른쪽: 한눈에 보기 + 메뉴 리스트 */}
+                <div className="flex-1">
+                  {/* "한눈에 보기" 버튼 */}
+
+                  {/* 메뉴 리스트 */}
+                  <div className="flex flex-wrap gap-12">
+                    {subMenuData[activeMenu].map((col, i) => (
+                      <div key={i} className="min-w-[160px]">
+                        <div className="font-bold mb-2 text-gray-800 text-2xl">{col.title}</div>
+                        <ul className="space-y-1 text-gray-600 text-[15px]">
+                          {col.items.map((text, j) => (
+                            <li key={j} className="cursor-pointer hover:text-[#0070c0]">
+                              {text}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </div>
               </div>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
+
+
     </div>
   )
 }

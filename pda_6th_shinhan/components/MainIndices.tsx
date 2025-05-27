@@ -39,7 +39,7 @@ export default function MainIndices() {
         </div>
       </div>
       {/* 차트 영역 - 50개 JSON 데이터로 동적 렌더링 */}
-      <div className="pt-5">
+      <div className="">
         <ChartWithDynamicData />
       </div>
       {/* 지수 테이블 - 3행 2열, 각 셀에 지수명+값 한 줄, 행 사이 점선 */}
