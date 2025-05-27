@@ -18,31 +18,31 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="w-full bg-gray-50 border-t mt-12">
-      <div className="max-w-7xl mx-auto px-4 py-8">
+    <footer className="w-full  bg-gray-50 border-t mt-12">
+      <div className="max-w-[980px] mx-auto px-4 py-8">
         {/* Main Footer Content */}
         <div className="flex flex-col lg:flex-row justify-between gap-8 mb-8">
         {/* Left Section - Customer Service */}
-        <div className="flex flex-col lg:flex-row gap-8 flex-1">
+        <div className="flex flex-col lg:flex-row gap-3 flex-1">
           <div className="space-y-2 min-w-[200px]">
             <p className="text-sm font-semibold">고객지원센터</p>
-            <p className="text-3xl text-blue-600" style={{color : "#1598dc"}}>1588-0365</p>
-            <p className="text-sm text-gray-600">말로하는 AI 상담서비스</p>
-            <p className="text-sm text-gray-600">24시간 챗봇 상담(신한 SOL증권)</p>
+            <p className="text-[32px] text-blue-600" style={{color : "#1598dc"}}>1588-0365</p>
+            <p className="text-xs text-gray-600">말로하는 AI 상담서비스</p>
+            <p className="text-xs text-gray-600">24시간 챗봇 상담(신한 SOL증권)</p>
           </div>
           <div className="space-y-1 min-w-[180px]">
-            <p className="whitespace-nowrap text-darkgray">• 해외주식상담센터 02-3772-2525</p>
-            <p className="whitespace-nowrap text-darkgray">• 해외파생팀 02-3772-4365</p>
-            <p className="whitespace-nowrap text-darkgray">• 해외사용자 ARS</p>
-            <p className="ml-4 whitespace-nowrap text-darkgray">82-2-6255-4510 (유료)</p>
+            <p className="whitespace-nowrap text-darkgray text-sm">• 해외주식상담센터 02-3772-2525</p>
+            <p className="whitespace-nowrap text-darkgray text-sm">• 해외파생팀 02-3772-4365</p>
+            <p className="whitespace-nowrap text-darkgray text-sm">• 해외사용자 ARS</p>
+            <p className="ml-4 whitespace-nowrap text-darkgray text-sm">82-2-6255-4510 (유료)</p>
           </div>
 
           <div className="space-y-1 min-w-[180px]">
-            <p className="whitespace-nowrap text-darkgray">• 연금자산관리센터 1588-1122</p>
-            <p className="whitespace-nowrap text-darkgray">• 디지털PB센터 02-3772-1010</p>
-            <p className="whitespace-nowrap text-darkgray">• 이벤트 전용센터 02-3772-2220</p>
-            <p className="whitespace-nowrap text-darkgray">• 시니어전용 상담센터</p>
-            <p className="ml-4 text-darkgray">02-3772-1001</p>
+            <p className="whitespace-nowrap text-darkgray text-sm">• 연금자산관리센터 1588-1122</p>
+            <p className="whitespace-nowrap text-darkgray text-sm">• 디지털PB센터 02-3772-1010</p>
+            <p className="whitespace-nowrap text-darkgray text-sm">• 이벤트 전용센터 02-3772-2220</p>
+            <p className="whitespace-nowrap text-darkgray text-sm">• 시니어전용 상담센터</p>
+            <p className="ml-4 text-darkgray text-sm">02-3772-1001</p>
           </div>
         </div>
 
@@ -164,7 +164,7 @@ export default function Footer() {
             {/* 텍스트 정보 전체를 왼쪽에 */}
             <div className="text-xs text-gray-600">
               {/* 상단 링크 */}
-              <div className="flex flex-wrap gap-4 mb-2">
+              <div className="flex flex-wrap gap-2 mb-2">
                 <a href="https://www.shinhansec.com/siw/customer-center/certification/730000/view.do" className="cursor-pointer hover:underline"><span>인증센터</span></a>
                 <span>•</span><a href="https://www.shinhansec.com/siw/customer-center/channel/channel_intro/contents.do" className="cursor-pointer hover:underline"><span>트레이딩 다운로드</span></a>
                 <span>•</span><a href="https://www.shinhansec.com/siw/customer-center/security/731701V01/contents.do" className="cursor-pointer hover:underline"><span>보안센터</span></a>
