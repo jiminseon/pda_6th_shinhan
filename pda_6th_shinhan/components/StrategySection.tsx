@@ -11,7 +11,7 @@ export default function StrategySection() {
         style={{
           content: "''",
           top: '-71px',
-          left: '240px',
+          left: '300px',
           width: '190px',
           height: '219px',
           background: 'url(https://www.shinhansec.com/siw/common/images/trading/bg_main_strat01.png) 0 0 no-repeat'
@@ -21,7 +21,7 @@ export default function StrategySection() {
       <div className="relative w-full p-10 z-[2]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="stratData today h-[650px] overflow-hidden">
-            <h2 className="text-[#000000] font-bold text-[28px] pl-4 mb-4 text-4xl">오늘의 투자전략</h2>
+            <h2 className="text-[#000000] font-bold text-[28px] pl-[1.5rem] mb-4 text-4xl">오늘의 투자전략</h2>
             <ul className="stratLst flex flex-col gap-10">
               <li className="group relative h-[54px] transition-all hover:h-[240px] hover:py-[15px] hover:my-[13px] focus:h-[120px] cursor-pointer mb-2" tabIndex={0}>
                 <div className="absolute left-0 top-0 w-[17px] h-full opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300"
@@ -158,7 +158,7 @@ export default function StrategySection() {
           </div>
 
           <div className="stratData global h-[650px] overflow-hidden">
-            <h2 className="text-[#000000] font-bold text-[28px] mb-4 text-4xl">글로벌 투자전략</h2>
+            <h2 className="text-[#000000] font-bold text-[28px] pl-[1.5rem] mb-4 text-4xl">글로벌 투자전략</h2>
             <ul className="stratLst flex flex-col-reverse gap-10">
               <li className="group relative h-[54px] transition-all hover:h-[240px] hover:py-[15px] hover:my-[13px] focus:h-[120px] cursor-pointer mb-2" tabIndex={0}>
               <div className="absolute left-0 top-0 w-[17px] h-full opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300"
@@ -307,7 +307,7 @@ export default function StrategySection() {
             </div>
           </div>
 
-          <div className="w-[47%] border-t-[3px] border-black ml-auto"></div>
+          <div className="w-[48%] border-t-[3px] border-black ml-auto"></div>
         </div>
       </div>
     </div>
