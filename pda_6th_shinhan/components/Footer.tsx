@@ -11,10 +11,14 @@ export default function Footer() {
     { name: "신한은행", url: "https://www.shinhan.com" },
     { name: "신한카드", url: "https://www.shinhancard.com" },
     { name: "신한라이프", url: "https://www.shinhanlife.co.kr" },
-    { name: "신한캐피탈", url: "https://www.shinhancapital.co.kr" },
-    { name: "신한저축은행", url: "https://www.shinhansavingsbank.co.kr" },
-    { name: "신한아이타스", url: "https://www.shinhanitas.com" },
-    { name: "신한DS", url: "https://www.shinhands.co.kr" },
+    { name: "신한캐피탈", url: "https://www.shcap.co.kr/ma/MA010000.do" },
+    { name: "제주은행", url: "https://www.jejubank.co.kr/hmpg/main.do" },
+    { name: "신한자산운용", url: "https://www.shinhanfund.com/" },
+    { name: "신한신용정보", url: "https://www.shinhanci.co.kr/" },
+    { name: "신한장학재단", url: "https://www.shsf.or.kr/" },
+    { name: "신한DS", url: "https://www.shinhands.co.kr/" },
+    { name: "신한리츠운용", url: "http://www.shinhanrem.com/" },
+    { name: "신한저축은행", url: "https://www.shinhansavings.com/CM_0066" },
   ]
 
   return (
