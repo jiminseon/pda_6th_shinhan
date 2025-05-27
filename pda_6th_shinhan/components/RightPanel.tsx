@@ -18,11 +18,11 @@ export default function RightPanel() {
           </div>
           <div className="flex justify-center items-center gap-8 mt-8">
             <div className="flex flex-col items-center cursor-pointer hover:underline">
-              <Image src="/book.png" alt="WTS 신버전" width={48} height={48} />
+              <Image src="/out.png" alt="WTS 신버전" width={48} height={48} />
               <div className="mt-2 text-base">WTS 신버전</div>
             </div>
             <div className="flex flex-col items-center cursor-pointer hover:underline">
-              <Image src="/out.png" alt="WTS 소개" width={48} height={48} />
+              <Image src="/book.png" alt="WTS 소개" width={48} height={48} />
               <div className="mt-2 text-base">WTS 소개</div>
             </div>
           </div>
