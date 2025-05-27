@@ -255,6 +255,7 @@ function ChartWithDynamicData() {
           if (canvas) {
             canvas.style.left = '-40px';
             canvas.style.top = '10px'; // ✅ 직접 수정!
+            canvas.style.height = '184px';
           }
         }}
         style={{ width: '100%', height: '100%' }}
