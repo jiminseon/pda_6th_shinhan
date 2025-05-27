@@ -267,8 +267,8 @@ export default function StrategySection() {
           <div className="flex bg-gray-40 h-[180px]">
             <div className="relative w-1/2 p-6 text-white overflow-hidden" style={{
               backgroundImage: 'url(https://www.shinhansec.com/siw/common/images/trading/bg_main_event02.png)',
-              backgroundSize: '100%',
-              backgroundPosition: 'right bottom',
+              backgroundSize: '98%',
+              backgroundPosition: 'left bottom',
               backgroundRepeat: 'no-repeat'
             }}>
               <div className="relative z-10">
@@ -282,32 +282,32 @@ export default function StrategySection() {
               </div>
             </div>
 
-            <div className="bg-white p-6 text-center relative w-1/4">
+            <div className="bg-white pl-6 text-left relative w-1/4">
               <h3 className="text-xl font-bold mb-2">해외주식</h3>
               <div className="mb-2">
                 <img
                   src="first_menu.png"
                   alt="해외주식"
-                  className="w-12 h-12 mx-auto object-contain"
+                  className="w-15 h-15 mx-left object-contain"
                 />
               </div>
               <p className="text-sm text-gray-500">25개국 24시간<br />해외주식투자 서비스</p>
             </div>
 
-            <div className="bg-white p-6 text-center relative w-1/4">
+            <div className="bg-white pl-2 text-left relative w-1/4">
               <h3 className="text-xl font-bold mb-2">해외선물</h3>
               <div className="mb-2">
                 <img
                   src="second_menu.png"
                   alt="해외선물"
-                  className="w-12 h-12 mx-auto object-contain"
+                  className="w-15 h-15 mx-left object-contain"
                 />
               </div>
               <p className="text-sm text-gray-500">해외선물<br />증권 노하우를 경험해보세요!</p>
             </div>
           </div>
 
-          <div className="w-1/2 border-t-[3px] border-black ml-auto"></div>
+          <div className="w-[47%] border-t-[3px] border-black ml-auto"></div>
         </div>
       </div>
     </div>
