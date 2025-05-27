@@ -402,7 +402,7 @@ export default function Nav() {
     <div className="relative w-[980px] mx-auto bg-white shadow z-10">
       {/* 상단 메뉴 */}
       <div className="flex items-center h-16 pl-6 relative z-20">
-        <div className="flex gap-10 text-base font-black text-gray-800 flex-grow">
+        <div className="flex gap-8 text-base font-black text-gray-800 flex-grow">
           {menuItems.map(item => (
             <span
               key={item}
