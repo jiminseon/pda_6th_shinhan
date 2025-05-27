@@ -5,25 +5,25 @@ import ReactECharts from 'echarts-for-react';
 export default function MainIndices() {
   return (
     <div className="bg-opacity-90 rounded-xl">
-      <div className="flex-row items-end justify-between mb-4">
+      <div className="flex-row items-end justify-between mb-2">
         <div className="flex flex-row gap-8">
           <div>
-            <div className="text-gray-500 text-xs">KOSPI</div>
+            <div className="text-black-500 text-s mb-2">KOSPI</div>
             <div className="text-5xl pr-2font-bold text-[#e6002d]">2,625.15</div>
             <div className="text-xs text-[#e6002d]">▲ 33.06 (1.28%)</div>
           </div>
           <div>
-            <div className="text-gray-500 text-xs">KOSDAQ</div>
+            <div className="text-black-500 text-s mb-2">KOSDAQ</div>
             <div className="text-xl font-bold text-[#e6002d]">725.99</div>
             <div className="text-xs text-[#e6002d]">▲ 10.01 (1.40%)</div>
           </div>
           <div>
-            <div className="text-gray-500 text-xs">DOW</div>
+            <div className="text-black-500 text-s mb-2">DOW</div>
             <div className="text-xl font-bold text-[#0050a0]">41,603.07</div>
             <div className="text-xs text-[#0050a0]">▼ 256.02 (-0.61%)</div>
           </div>
           <div>
-            <div className="text-gray-500 text-xs">NASDAQ</div>
+            <div className="text-black-500 text-s mb-2">NASDAQ</div>
             <div className="text-xl font-bold text-[#0050a0]">18,737.21</div>
             <div className="text-xs text-[#0050a0]">▼ 188.53 (-1.00%)</div>
           </div>
@@ -31,38 +31,100 @@ export default function MainIndices() {
         {/* 표로 보기 버튼 */}
         <div className="flex justify-end">
           <button
-            className="border border-gray-300 rounded px-3 py-1 text-xs"
+            className="border border-gray-300 rounded px-3 py-1 text-xs hover:border-gray-500 transition-all"
             onClick={() => openTablePopup()}
           >
-            표로 보기
+            표로 보기 &gt;
           </button>
         </div>
       </div>
       {/* 차트 영역 - 50개 JSON 데이터로 동적 렌더링 */}
-      <ChartWithDynamicData />
+      <div className="">
+        <ChartWithDynamicData />
+      </div>
       {/* 지수 테이블 - 3행 2열, 각 셀에 지수명+값 한 줄, 행 사이 점선 */}
-      <div className="w-full mt-6">
-        <table className="w-full text-base border-separate" style={{ borderCollapse: 'separate', borderSpacing: '0px 0', borderBottom: '1px solid #dedee0'}}>
+
+
+      <div className="w-full mt-2">
+        <table className="w-full table-fixed text-sm border-separate" style={{ borderSpacing: 0 }}>
           <tbody>
             {/* 1행 */}
-            <tr>
-              <td className="pr-8" style={{padding: '10px 0 7px'}}>KOSPI200 <span className="text-red-600 ml-2">352.11 <span className="align-middle">▲</span> 6.83 1.98 %</span></td>
-              <td className="pl-8" style={{padding: '10px 0 7px'}}>니케이225 <span className="text-red-600 ml-2">37,531.53 <span className="align-middle">▲</span> 371.06 1.00 %</span></td>
+            <tr style={{ borderBottom: '1px solid #dedee0' }}>
+              <td className="w-1/2 pr-4 py-2">
+                <div className="flex justify-between items-center">
+                  <span>KOSPI200</span>
+                  <span className="text-red-600 text-right">
+                    352.11 <span className="align-middle">▲</span> 6.83 1.98 %
+                  </span>
+                </div>
+              </td>
+              <td className="w-1/2 pl-4 py-2">
+                <div className="flex justify-between items-center">
+                  <span>니케이225</span>
+                  <span className="text-red-600 text-right">
+                    37,531.53 <span className="align-middle">▲</span> 371.06 1.00 %
+                  </span>
+                </div>
+              </td>
             </tr>
+
             {/* 2행 */}
             <tr>
-              <td className="pr-8" style={{padding: '10px 0 7px', borderTop: '1px dotted #000'}}>선물(최근월물) <span className="ml-2">%</span></td>
-
-              <td className="pl-8" style={{padding: '10px 0 7px', borderTop: '1px dotted #000'}}>항셍지수 <span className="text-blue-600 ml-2">23,259.06 <span className="align-middle">▼</span> 342.20 -1.45 %</span></td>
+              <td className="w-1/2 pr-4 py-2" style={{ borderTop: '1px dotted #000' }}>
+                <div className="flex justify-between items-center">
+                  <span>선물(최근월물)</span>
+                  <span>%</span>
+                </div>
+              </td>
+              <td className="w-1/2 pl-4 py-2" style={{ borderTop: '1px dotted #000' }}>
+                <div className="flex justify-between items-center">
+                  <span>항셍지수</span>
+                  <span className="text-blue-600 text-right">
+                    23,282.33 <span className="align-middle">▼</span> 318.93 -1.35 %
+                  </span>
+                </div>
+              </td>
             </tr>
+
             {/* 3행 */}
             <tr>
-              <td className="pr-8" style={{padding: '10px 0 7px', borderTop: '1px dotted #000'}}>원/달러 <span className="text-blue-600 ml-2">1,366.50 <span className="align-middle">▼</span> 16.20 -1.17 %</span></td>
-              <td className="pl-8" style={{padding: '10px 0 7px', borderTop: '1px dotted #000'}}>상해종합 <span className="text-blue-600 ml-2">3,346.84 <span className="align-middle">▼</span> 1.53 -0.05 %</span></td>
+              <td
+                className="w-1/2 pr-4 py-2 border-b"
+                style={{
+                  borderTop: '1px dotted #000',
+                  borderBottom: '1px solid #dedee0',
+                }}
+              >
+                <div className="flex justify-between items-center">
+                  <span>원/달러</span>
+                  <span className="text-red-600 text-right">
+                    1,370.50 <span className="align-middle">▲</span> 4.00 0.29 %
+                  </span>
+                </div>
+              </td>
+              <td
+                className="w-1/2 pl-4 py-2 border-b"
+                style={{
+                  borderTop: '1px dotted #000',
+                  borderBottom: '1px solid #dedee0',
+                }}
+              >
+                <div className="flex justify-between items-center">
+                  <span>상해종합</span>
+                  <span className="text-blue-600 text-right">
+                    3,346.84 <span className="align-middle">▼</span> 1.53 -0.05 %
+                  </span>
+                </div>
+              </td>
             </tr>
+
+
           </tbody>
         </table>
       </div>
+
+
+      
     </div>
   )
 }
@@ -71,17 +133,27 @@ export default function MainIndices() {
 function ChartWithDynamicData() {
   const [data, setData] = useState<{date: string, value: number}[]>([]);
   useEffect(() => {
-    // 실제 fetch 대신 mock 데이터 (50개)
     const start = new Date('2025-02-26');
     const arr = Array.from({length: 50}, (_, i) => {
       const d = new Date(start.getTime() + i * 24 * 60 * 60 * 1000);
       const date = d.toISOString().slice(0,10).replace(/-/g, '.');
-      // 임의의 등락 데이터
-      const value = 2400 + Math.round(200 * Math.sin(i/7) + 80 * Math.cos(i/3) + Math.random()*40);
+      const base = 2500 + Math.round(200 * Math.sin(i / 7) + 80 * Math.cos(i / 3) + Math.random() * 40);
+
+      // 소프트 클램프 함수
+      function softLimit(value: number, min: number, max: number) {
+        if (value < min) {
+          return min + Math.tanh((value - min) / 100) * 100;
+        }
+        if (value > max) {
+          return max + Math.tanh((value - max) / 100) * 100;
+        }
+        return value;
+      }
+      
+      const value = Math.round(softLimit(base, 2200, 2600));
       return { date, value };
     });
-    setTimeout(() => setData(arr), 500); // 0.5초 후 데이터 세팅 (fetch 흉내)
-    // 데이터가 준비되면 window에 저장 (팝업에서 사용)
+    setTimeout(() => setData(arr), 500);
     (window as any).dataForTable = arr;
   }, []);
 
@@ -101,17 +173,21 @@ function ChartWithDynamicData() {
           xAxis: {
             type: 'category',
             data: xData,
-            axisLabel: { show: true, fontSize: 14, fontWeight: 500, color: '#222', margin: 8, align: 'center' },
+            axisLabel: { show: true, fontSize: 12, fontWeight: 500, color: '#222', margin: 16, align: 'center' },
             axisLine: { show: true, lineStyle: { color: '#3b82f6', width: 2 } },
             axisTick: { show: true, length: 6, lineStyle: { color: '#3b82f6', width: 2 } },
             splitLine: { show: true, lineStyle: { color: '#d1d5db', width: 1, type: 'solid' } }
           },
           yAxis: {
             type: 'value',
-            min: Math.floor(Math.min(...yData) / 100) * 100,
-            max: Math.ceil(Math.max(...yData) / 100) * 100,
-            splitNumber: 4,
-            axisLabel: { show: true, fontSize: 14, fontWeight: 500, color: '#222', margin: 8, align: 'right' },
+            min: (() => {
+              const minValue = Math.floor(Math.min(...yData) / 100) * 100;
+              return minValue <= 2100 ? 2200 : minValue;
+            })(),
+            // min: Math.floor(Math.min(...yData) / 100) * 100,
+            max: 2700,
+            splitNumber: 5,
+            axisLabel: { show: true, fontSize: 12, fontWeight: 500, color: '#222', margin: 16, align: 'right' },
             axisLine: { show: true, lineStyle: { color: '#3b82f6', width: 2 } },
             axisTick: { show: true, length: 6, lineStyle: { color: '#3b82f6', width: 2 } },
             splitLine: { show: true, lineStyle: { color: '#d1d5db', width: 1, type: 'solid' } }
@@ -119,8 +195,15 @@ function ChartWithDynamicData() {
           series: [{
             data: yData,
             type: 'line',
+            showSymbol: false,
             smooth: false,
-            symbol: 'none',
+            symbol: 'circle',
+            symbolSize: 8,
+            itemStyle: {
+              color: '#3b82f6',
+              borderColor: '#fff',
+              borderWidth: 2
+            },
             lineStyle: { color: '#3b82f6', width: 2 },
             areaStyle: { color: 'rgba(59,130,246,0.7)' }
           }],
@@ -140,6 +223,16 @@ function ChartWithDynamicData() {
                      `<div style=\"font-weight:400;font-size:14px;\">${d.data.toLocaleString()}</div>`;
             }
           },
+          emphasis: {
+            focus: 'series',
+            symbol: 'circle',        // ✅ hover 시에만 동그라미 표시
+            symbolSize: 1,
+            itemStyle: {
+              borderWidth: 2,
+              borderColor: '#fff',
+              color: '#3b82f6'
+            }
+          },
           animation: false,
           graphic: [
             {
@@ -155,11 +248,22 @@ function ChartWithDynamicData() {
             }
           ]
         }}
+        
+        onChartReady={(chart) => {
+          // canvas DOM을 직접 찾는다
+          const canvas = chart.getZr().dom.querySelector('canvas[data-zr-dom-id]');
+          if (canvas) {
+            canvas.style.left = '-40px';
+            canvas.style.top = '10px'; // ✅ 직접 수정!
+          }
+        }}
         style={{ width: '100%', height: '100%' }}
+
       />
     </div>
   );
 }
+
 
 // 팝업창에 표 띄우기 함수 (차트 데이터와 연동)
 function openTablePopup() {
