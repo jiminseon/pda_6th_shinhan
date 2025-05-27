@@ -22,16 +22,19 @@ export default function StrategySection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="stratData today h-[400px] overflow-hidden">
             <h2 className="text-[#000000] font-bold text-[28px] mb-4 text-lg">오늘의 투자전략</h2>
-            <ul className="stratLst flex flex-col-reverse gap-2">
-              <li className="group relative h-[42px] transition-all duration-300 hover:h-[120px] focus:h-[120px] cursor-pointer mb-2" tabIndex={0}>
+            <ul className="stratLst flex flex-col gap-2">
+              <li className="group relative h-[54px] transition-all hover:h-[240px] hover:py-[15px] hover:my-[13px] focus:h-[120px] cursor-pointer mb-2" tabIndex={0}>
                 <div className="absolute left-0 top-0 w-[17px] h-full opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300"
                      style={{
-                       background: '#545fa6 url(https://www.shinhansec.com/siw/common/images/trading/bg_main_bracket.gif) 0 0 no-repeat'
+                       background: '#545fa6 url(https://www.shinhansec.com/siw/common/images/trading/bg_main_bracket.gif) 0 0 no-repeat',
+                       width: '17px',
+                       height: '210px'
                      }} />
                 <div className="absolute right-0 top-0 w-[20px] h-full opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300"
                      style={{
-                       background: '#545fa6 url(https://www.shinhansec.com/siw/common/images/trading/bg_main_bracket.gif) -17px 0 no-repeat',
-                       backgroundSize: '37px 210px'
+                       background: '#545fa6 url(https://www.shinhansec.com/siw/common/images/trading/bg_main_bracket.gif) -23px 0 no-repeat',
+                       width: '17px',
+                       height: '210px'
                      }} />
                 <div className="absolute px-6 py-3">
                   <Badge variant="outline" className="mb-2">계량분석</Badge>
