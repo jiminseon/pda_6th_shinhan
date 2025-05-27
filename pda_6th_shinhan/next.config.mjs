@@ -9,6 +9,12 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
+  assetPrefix: '/pda_6th_shinhan',
+  basePath: '/pda_6th_shinhan',
 }
 
 export default nextConfig
