@@ -1,4 +1,22 @@
+'use client';
+
+import { useState } from "react"
+
 export default function Footer() {
+
+  const [isFamilySiteOpen, setIsFamilySiteOpen] = useState(false)
+
+  const familySiteLinks = [
+    { name: "신한금융지주", url: "https://www.shinhangroup.com" },
+    { name: "신한은행", url: "https://www.shinhan.com" },
+    { name: "신한카드", url: "https://www.shinhancard.com" },
+    { name: "신한라이프", url: "https://www.shinhanlife.co.kr" },
+    { name: "신한캐피탈", url: "https://www.shinhancapital.co.kr" },
+    { name: "신한저축은행", url: "https://www.shinhansavingsbank.co.kr" },
+    { name: "신한아이타스", url: "https://www.shinhanitas.com" },
+    { name: "신한DS", url: "https://www.shinhands.co.kr" },
+  ]
+
   return (
     <footer className="w-full bg-gray-50 border-t mt-12">
       <div className="max-w-7xl mx-auto px-4 py-8">
@@ -33,133 +51,154 @@ export default function Footer() {
           <div className="grid grid-cols-4 gap-1">
             {/* 아이콘 1 */}
             <div className="text-center">
-              <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-2">
-                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
+              <div >
+                <a href="https://rsp.shinhansec.com/"><img src="control.png" className="w-16 flex items-center justify-center mx-auto mb-2"/></a>
               </div>
-              <div className="text-xs text-gray-700">원격제어</div>
+              <a href="https://rsp.shinhansec.com/"><div className="text-xs text-gray-700 cursor-pointer hover:underline">원격제어</div></a>
             </div>
             {/* 아이콘 2 */}
             <div className="text-center">
-              <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-2">
-                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+              <div>
+                <a href="https://www.shinhansec.com/siw/customer-center/advise/faq/view.do"><img src="faq.png" className="w-12 flex items-center justify-center mx-auto mb-2"/></a>
               </div>
-              <div className="text-xs text-gray-700">FAQ</div>
+              <div className="text-xs text-gray-700 cursor-pointer hover:underline">FAQ</div>
             </div>
             {/* 아이콘 3 */}
             <div className="text-center">
-              <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-2">
-                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                </svg>
+              <div>
+                <a href="https://www.shinhansec.com/siw/etc/login/view.do?returnUrl=/siw/customer-center/advise/newvocWrite/view.do"><img src="consult.png" className="w-12 flex items-center justify-center mx-auto mb-2"/></a>
               </div>
-              <div className="text-xs text-gray-700">1:1상담</div>
+              <div className="text-xs text-gray-700 cursor-pointer hover:underline">1:1상담</div>
             </div>
             {/* 아이콘 4 */}
             <div className="text-center">
-              <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-2">
-                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
+              <div>
+                <a href="https://www.shinhansec.com/siw/customer-center/guide/business_guide_time/contents.do"><img src="explain.png" className="w-12 flex items-center justify-center mx-auto mb-2"/></a>
               </div>
-              <div className="text-xs text-gray-700">업무안내</div>
+              <div className="text-xs text-gray-700 cursor-pointer hover:underline">업무안내</div>
             </div>
           </div>
         </div>
       </div>
 
 
-        {/* Divider */}
-        <div className="border-t border-gray-300 mb-6"></div>
-
+      {/* Divider */}
+      <div className="border-t border-b border-gray-300">
         {/* Bottom Section */}
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-6">
+        <div className="flex justify-between items-center h-10 px-4">
           {/* Left Links */}
           <div className="flex items-center gap-4 text-sm">
-            <span>회사소개</span>
+            <a href="https://open.shinhansec.com/new_ir/main.jsp" target='_blank'><span className="cursor-pointer hover:underline">회사소개</span></a>
             <span>|</span>
-            <span>EN</span>
-            <div className="flex items-center gap-2">
-              <span>Family Site</span>
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </div>
+            <a href="https://open.shinhansec.com/new_eng/" target='_blank'><span className="cursor-pointer hover:underline">EN</span></a>
           </div>
 
           {/* Right Social Icons */}
-          <div className="flex items-center gap-4">
-            <div className="w-8 h-8 bg-gray-400 rounded flex items-center justify-center">
-              <span className="text-white text-xs font-bold">f</span>
+          <div className="flex items-center gap-4 ">
+            {/* Family Site Dropdown */}
+            <div className="relative  h-10 w-56 bg-gray-200">
+              <button
+                className="w-full h-full flex items-center justify-between px-3"
+                onClick={() => setIsFamilySiteOpen(!isFamilySiteOpen)}
+              >
+                <span>Family Site</span>
+                <svg
+                  className={`w-4 h-4 rotate-180`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {/* Dropdown Menu */}
+              {isFamilySiteOpen && (
+                <div className="absolute bottom-full left-0 mb-2 w-64 bg-white border border-gray-300 rounded-lg shadow-lg z-50">
+                  <div className="max-h-48 overflow-y-auto">
+                    <div className="p-2">
+                      {familySiteLinks.map((link, index) => (
+                        <a
+                          key={index}
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded"
+                        >
+                          {link.name}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
-            <div className="w-8 h-8 bg-gray-400 rounded flex items-center justify-center">
-              <span className="text-white text-xs font-bold">b</span>
-            </div>
-            <div className="w-8 h-8 bg-gray-400 rounded flex items-center justify-center">
-              <span className="text-white text-xs">💬</span>
-            </div>
-            <div className="w-8 h-8 bg-gray-400 rounded flex items-center justify-center">
-              <span className="text-white text-xs">▶</span>
-            </div>
-            <div className="w-8 h-8 bg-gray-400 rounded flex items-center justify-center">
-              <span className="text-white text-xs">📷</span>
+
+
+            {/* SNS Icons */}
+            <div className="flex items-center gap-2 pl-10">
+              <div className="w-8 h-8 bg-gray-600 rounded flex items-center justify-center">
+                <a href="https://www.facebook.com/shinhansecurities" target='_blank'><img src="facebook.png"/></a>
+              </div>
+              <div className="w-8 h-8 bg-gray-600 rounded flex items-center justify-center">
+                <a href="https://blog.naver.com/shinhansec_official" target='_blank'><img src="blog.png"/></a>
+              </div>
+              <div className="w-8 h-8 bg-gray-600 rounded flex items-center justify-center">
+                <a href="https://pf.kakao.com/_xdnLFd" target='_blank'><img src="kakao.png"/></a>
+              </div>
+              <div className="w-8 h-8 bg-gray-600 rounded flex items-center justify-center">
+                <a href="https://www.youtube.com/user/shinhaninvest" target='_blank'><img src="youtube.png"/></a>
+              </div>
+              <div className="w-8 h-8 bg-gray-600 rounded flex items-center justify-center">
+                <a href="https://www.instagram.com/shinhansec_official/#" target='_blank'><img src="insta.png"/></a>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+
 
         {/* Service Links */}
-        <div className="mt-6 text-xs text-gray-600">
-          <div className="flex flex-wrap gap-4 mb-2">
-            <span>인증센터</span>
-            <span>•</span>
-            <span>트레이딩 다운로드</span>
-            <span>•</span>
-            <span>보안센터</span>
-            <span>•</span>
-            <span>지점안내</span>
-            <span>•</span>
-            <span>전자민원신청</span>
-            <span>•</span>
-            <span>홈페이지참조회</span>
-            <span>•</span>
-            <span>금융상품 통합비교공시</span>
-            <span>•</span>
-            <span>내부고발제도</span>
-          </div>
-          <div className="flex flex-wrap gap-4 mb-4">
-            <span>개인정보처리방침</span>
-            <span>•</span>
-            <span>신용정보활용체제</span>
-            <span>•</span>
-            <span>약관 및 유의사항</span>
-            <span>•</span>
-            <span>보호금융상품등록부</span>
-            <span>•</span>
-            <span>금융투자소득세포털</span>
-            <span>•</span>
-            <span>투자권유대행인</span>
-            <span>•</span>
-            <span>사이트맵</span>
+        <div className="w-full py-6 ">
+          <div className="max-w-6xl relative">
+            {/* 텍스트 정보 전체를 왼쪽에 */}
+            <div className="text-xs text-gray-600">
+              {/* 상단 링크 */}
+              <div className="flex flex-wrap gap-4 mb-2">
+                <a href="https://www.shinhansec.com/siw/customer-center/certification/730000/view.do" className="cursor-pointer hover:underline"><span>인증센터</span></a>
+                <span>•</span><a href="https://www.shinhansec.com/siw/customer-center/channel/channel_intro/contents.do" className="cursor-pointer hover:underline"><span>트레이딩 다운로드</span></a>
+                <span>•</span><a href="https://www.shinhansec.com/siw/customer-center/security/731701V01/contents.do" className="cursor-pointer hover:underline"><span>보안센터</span></a>
+                <span>•</span><a href="https://open.shinhansec.com/new_ir/business/business_01.jsp" target="_blank" className="cursor-pointer hover:underline"><span>지점망안내</span></a>
+                <span>•</span><a href="https://www.shinhansec.com/siw/customer-center/protection/claim_apply/contents.do" className="cursor-pointer hover:underline"><span>전자민원신청</span></a>
+                <span>•</span><a href="https://www.shinhansec.com/wizvera/veraport/install20/install_web.html?P_name=ASTx&url=%2Fsiw%2Fbanking-lending%2Fcustomer-info%2Fsleepy%2Fview.do" className="cursor-pointer hover:underline"><span>휴먼계좌조회</span></a>
+                <span>•</span><a href="https://finlife.fss.or.kr/finlife/main/main.do?menuNo=700000" target="_blank" className="cursor-pointer hover:underline"><span>금융상품통합비교공시</span></a>
+                <span>•</span><a href="https://open.shinhansec.com/new_ir/company/company_12.jsp" target="_blank" className="cursor-pointer hover:underline"><span>내부고발제도</span></a>
+              </div>
+
+              {/* 하단 링크 */}
+              <div className="flex flex-wrap gap-4 mb-4">
+                <a href="https://www.shinhansec.com/siw/customer-center/guide/business_guide_terms_tab6/contents.do" className="cursor-pointer hover:underline"><span className="text-blue-900">개인정보처리방침</span></a><span>•</span>
+                <a href="https://www.shinhansec.com/siw/customer-center/guide/business_guide_terms_tab8/contents.do" className="cursor-pointer hover:underline"><span className="text-blue-900">신용정보활용체제</span></a><span>•</span>
+                <a href="https://www.shinhansec.com/siw/customer-center/guide/business_guide_terms_tab1/contents.do" className="cursor-pointer hover:underline"><span>약관 및 유의사항</span></a>
+                <span>•</span><a href="https://www.shinhansec.com/siw/customer-center/guide/business_guide_terms_tab5/contents.do" className="cursor-pointer hover:underline"><span>보호금융상품등록부</span></a><span>•</span>
+                <a href="https://www.shinhansec.com/siw/etc/tax_portal/contents.do" target="_blank" className="cursor-pointer hover:underline"><span>금융투자소득세포털</span></a><span>•</span><a href="https://open.shinhansec.com/new_ir/recruit/recruit_05_02.jsp" target="_blank" className="cursor-pointer hover:underline"><span>투자권유대행인</span></a><span>•</span>
+                <span>사이트맵</span>
+              </div>
+
+              {/* 회사 정보 */}
+              <div className="mb-1">
+                서울특별시 영등포구 의사당대로 96 (여의도동,TP Tower) | 대표이사 이선호 | 사업자등록번호 116-81-36684
+              </div>
+              <p>COPYRIGHT©2016 SHINHAN SECURITIES CO.,LTD. All Rights Reserved.</p>
+            </div>
+
+            {/* 오른쪽 하단 로고 이미지 */}
+            <div className="absolute right-0 bottom-0">
+              <img src="footer_logo.png" className="w-36" />
+            </div>
           </div>
         </div>
 
-        {/* Company Information */}
-        <div className="text-xs text-gray-600 mb-4">
-          <div className="mb-1">
-            서울특별시 영등포구 의사당대로 96 (여의도동,TP Tower) | 대표이사 이선호 | 사업자등록번호 116-81-36684
-          </div>
-          <div>COPYRIGHT©2016 SHINHAN SECURITIES CO.,LTD. All Rights Reserved.</div>
-        </div>
-
-        {/* Awards Section */}
-        <div className="flex justify-end items-center gap-4">
-          <div className="flex items-center gap-2">
-            <img src="footer_logo.png"/>
-          </div>
-        </div>
       </div>
     </footer>
   )
