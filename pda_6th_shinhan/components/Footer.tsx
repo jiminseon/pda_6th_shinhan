@@ -96,12 +96,12 @@ export default function Footer() {
           {/* Right Social Icons */}
           <div className="flex items-center gap-4 ">
             {/* Family Site Dropdown */}
-            <div className="relative  h-10 w-56 bg-gray-200">
+            <div className="relative h-10 w-56 bg-gray-200">
               <button
                 className="w-full h-full flex items-center justify-between px-3"
                 onClick={() => setIsFamilySiteOpen(!isFamilySiteOpen)}
               >
-                <span>Family Site</span>
+                <span className="text-darkgray text-sm">Family Site</span>
                 <svg
                   className={`w-4 h-4 rotate-180`}
                   fill="none"
@@ -115,7 +115,7 @@ export default function Footer() {
               {/* Dropdown Menu */}
               {isFamilySiteOpen && (
                 <div className="absolute bottom-full left-0 mb-2 w-64 bg-white border border-gray-300 rounded-lg shadow-lg z-50">
-                  <div className="max-h-48 overflow-y-auto">
+                  <div className="max-h-48 overflow-y-auto bg-gray-200">
                     <div className="p-2">
                       {familySiteLinks.map((link, index) => (
                         <a
@@ -123,7 +123,7 @@ export default function Footer() {
                           href={link.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded"
+                          className="block px-3 py-2 text-sm hover:bg-gray-100 hover:underline rounded"
                         >
                           {link.name}
                         </a>
@@ -176,7 +176,7 @@ export default function Footer() {
               </div>
 
               {/* 하단 링크 */}
-              <div className="flex flex-wrap gap-4 mb-4">
+              <div className="flex flex-wrap gap-2 mb-4">
                 <a href="https://www.shinhansec.com/siw/customer-center/guide/business_guide_terms_tab6/contents.do" className="cursor-pointer hover:underline"><span className="text-blue-900">개인정보처리방침</span></a><span>•</span>
                 <a href="https://www.shinhansec.com/siw/customer-center/guide/business_guide_terms_tab8/contents.do" className="cursor-pointer hover:underline"><span className="text-blue-900">신용정보활용체제</span></a><span>•</span>
                 <a href="https://www.shinhansec.com/siw/customer-center/guide/business_guide_terms_tab1/contents.do" className="cursor-pointer hover:underline"><span>약관 및 유의사항</span></a>
